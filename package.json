@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"csrf",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "csrf",
+    "description": "api documentation for [csrf (v3.0.6)](https://github.com/pillarjs/csrf#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-csrf.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-csrf) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-csrf.svg)](https://travis-ci.org/npmdoc/node-npmdoc-csrf)",
     "devDependencies": {
         "csrf": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-csrf",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-csrf",
+    "keywords": [
+        "documentation",
+        "csrf"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_csrf.js",
+    "name": "npmdoc-csrf",
+    "nameAlias": "npmdoc_csrf",
+    "nameOriginal": "npmdoc-csrf",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-csrf"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
