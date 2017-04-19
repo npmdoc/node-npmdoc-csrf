@@ -61,12 +61,59 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.csrf">module csrf</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.csrf.csrf">
+            function <span class="apidocSignatureSpan"></span>csrf
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.csrf" id="apidoc.module.csrf">module csrf</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.csrf.csrf" id="apidoc.element.csrf.csrf">
+        function <span class="apidocSignatureSpan"></span>csrf
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Tokens(options) {
+  if (!(this instanceof Tokens)) {
+    return new Tokens(options)
+  }
+
+  var opts = options || {}
+
+  var saltLength = opts.saltLength !== undefined
+    ? opts.saltLength
+    : 8
+
+  if (typeof saltLength !== &#x27;number&#x27; || !isFinite(saltLength) || saltLength &#x3c; 1) {
+    throw new TypeError(&#x27;option saltLength must be finite number &#x3e; 1&#x27;)
+  }
+
+  var secretLength = opts.secretLength !== undefined
+    ? opts.secretLength
+    : 18
+
+  if (typeof secretLength !== &#x27;number&#x27; || !isFinite(secretLength) || secretLength &#x3c; 1) {
+    throw new TypeError(&#x27;option secretLength must be finite number &#x3e; 1&#x27;)
+  }
+
+  this.saltLength = saltLength
+  this.secretLength = secretLength
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
