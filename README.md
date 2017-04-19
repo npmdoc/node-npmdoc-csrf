@@ -1,9 +1,14 @@
-# api documentation for  [csrf (v3.0.6)](https://github.com/pillarjs/csrf#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-csrf.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-csrf) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-csrf.svg)](https://travis-ci.org/npmdoc/node-npmdoc-csrf)
+# npmdoc-csrf
+
+#### api documentation for  [csrf (v3.0.6)](https://github.com/pillarjs/csrf#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-csrf.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-csrf) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-csrf.svg)](https://travis-ci.org/npmdoc/node-npmdoc-csrf)
+
 #### primary logic behind csrf tokens
 
-[![NPM](https://nodei.co/npm/csrf.png?downloads=true)](https://www.npmjs.com/package/csrf)
+[![NPM](https://nodei.co/npm/csrf.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/csrf)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-csrf/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-csrf_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-csrf/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-csrf/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-csrf/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-csrf/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-csrf/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-csrf/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Jonathan Ong",
-        "email": "me@jongleberry.com",
         "url": "http://jongleberry.com"
     },
     "bugs": {
@@ -26,8 +30,7 @@
     },
     "contributors": [
         {
-            "name": "Douglas Christopher Wilson",
-            "email": "doug@somethingdoug.com"
+            "name": "Douglas Christopher Wilson"
         }
     ],
     "dependencies": {
@@ -69,21 +72,17 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "dougwilson",
-            "email": "doug@somethingdoug.com"
+            "name": "dougwilson"
         },
         {
-            "name": "dwolla",
-            "email": "api@dwolla.com"
+            "name": "dwolla"
         },
         {
-            "name": "jongleberry",
-            "email": "jonathanrichardong@gmail.com"
+            "name": "jongleberry"
         }
     ],
     "name": "csrf",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/pillarjs/csrf.git"
@@ -97,16 +96,6 @@
     "version": "3.0.6"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module csrf](#apidoc.module.csrf)
-
-
-
-# <a name="apidoc.module.csrf"></a>[module csrf](#apidoc.module.csrf)
 
 
 
